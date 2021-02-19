@@ -55,7 +55,6 @@ def get_token():
 
 
 def attempt_booking(quote_id, license_plate, email, new_token, desired_date):
-    """Leaving for now as it looks good, but need a token"""
     url = f"{BOOKING_URL}?final_price=0.00&quote_id={quote_id}&plate_number={license_plate}&email={email}&send_email_confirmation=True"
     payload = {}
     headers = {f"Authorization": "Bearer {new_token}"}
